@@ -35,6 +35,9 @@ module.exports = {
       black: '#000',
       white: '#fff',
 
+      primary: '#3A468C',
+      'primary-dark': '#352473',
+
       green: {
         100: '#f0fff4',
         200: '#c6f6d5',
@@ -61,8 +64,8 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Nunito Sans',
         'Roboto',
+        'Nunito Sans',
         '-apple-system',
         'BlinkMacSystemFont',
         '"Segoe UI"',

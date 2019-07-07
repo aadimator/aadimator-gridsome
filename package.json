@@ -1,5 +1,5 @@
 {
-  "name": "andremadarang",
+  "name": "aadimator",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -20,6 +20,8 @@
     "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
     "tailwindcss": "^1.0.4"
   }
 }
