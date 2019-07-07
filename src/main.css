@@ -15,14 +15,17 @@
   --text-copy-secondary: #4a5568;
 
   --border-border-color-primary: white;
+
+  --color-primary: #583BBF;
+  --color-primary-dark: #352473;
 }
 
 .theme-light .search-highlighted {
-  background: #f0fff4;
+  background: rgb(236, 233, 248);
 }
 
 .theme-light .search-hover:hover {
-  background: #f0fff4;
+  background: rgb(236, 233, 248);
 }
 
 .theme-dark .markdown-body {
@@ -48,6 +51,10 @@
   --text-copy-secondary: #e2e8f0;
 
   --border-border-color-primary:  #1a202c;
+
+  --color-primary: #59A3BE;
+  --color-primary-dark: #3E7598;
+
 }
 
 .theme-dark .markdown-body {
@@ -59,11 +66,11 @@
 }
 
 a {
-  @apply text-green-700 font-bold;
+  @apply text-primary;
 }
 
 a:hover {
-  @apply text-green-800;
+  @apply text-primary-dark;
 }
 
 nav .active {
@@ -94,9 +101,15 @@ nav .active {
   }
 }
 
-.checkmark {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2229%22%20height%3D%2229%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M4.427%2024.93A14.5%2014.5%200%201%201%2024.93%204.427c5.495%205.69%205.416%2014.733-.177%2020.326s-14.637%205.672-20.326.177z%22%20fill%3D%22%232E855A%22/%3E%3Cpath%20fill%3D%22%23FFF%22%20d%3D%22M10.234%2012.803l3.67%203.253L20.766%2010%2023%2012l-9.096%208L8%2014.789l2.234-2z%22/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
+.theme-light .checkmark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23583BBF' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; 
+  @apply pl-10;
+}
+
+.theme-dark .checkmark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%2359A3BE' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; 
   @apply pl-10;
 }
 
